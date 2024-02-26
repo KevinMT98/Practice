@@ -7,7 +7,7 @@ using System.Runtime.Intrinsics.X86;
 
 internal class Program
 {
-    public static void Main(string[] args)
+    private static void Main(string[] args)
     {
         double X1, X2, Y1, Y2, Distance;
         string aux;
