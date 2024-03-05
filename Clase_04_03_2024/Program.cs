@@ -5,7 +5,7 @@ internal class Program
     public static void Main(string[] args)
     {
         double num1, num2, num3;
-        string mensaje = "El numero mayor es: ";
+        //string mensaje = "El numero mayor es: ";
 
         // pedir datos
         Console.Write("\n Ingrese el primer numero:  ");
@@ -18,32 +18,28 @@ internal class Program
         num3 = Convert.ToDouble(Console.ReadLine());
 
         // validar los tres numeros
-
-        if ((num1 > num2) && (num1 > num3))
-
+        if ((num1 == num2) && (num3 == num1))
         {
-            Console.WriteLine("\n el numero mayor es " + num1);
-            Console.WriteLine("\n el numero del medio es " + num2);
-            Console.WriteLine("\n el numero menor es " + num3);
+            Console.WriteLine("\n Los numeros ingresados son iguales ");
         }
-
-        else if ((num2 > num1) && (num1 > num3))
-
+        if ((num1 > num2) && (num2 > num3))
         {
-            Console.WriteLine("\n el numero mayor es " + num2);
-            Console.WriteLine("\n el numero del medio es " + num1);
-            Console.WriteLine("\n el numero menor es " + num3);
+            Console.WriteLine("\n El número mayor es " + num1.ToString("#,##0"));
+            Console.WriteLine("\n El numero del medio es " + num2.ToString("#,##0"));
+            Console.WriteLine("\n el numero menor es " + num3.ToString("#,##0"));
         }
-
-        else if ((num3 > num2) && (num2 > num1))
-
+        else if ((num2 > num1) && (num2 > num3))
         {
-            Console.WriteLine("\n el numero mayor es " + num3);
-            Console.WriteLine("\n el numero del medio es " + num2);
-            Console.WriteLine("\n el numero menor es " + num1);
+            Console.WriteLine("\n El numero mayor es " + num2.ToString("#,##0"));
+            Console.WriteLine("\n El numero del medio es " + num3.ToString("#,##0"));
+            Console.WriteLine("\n El numero menor es " + num1.ToString("#,##0"));
         }
-         else 
-            Console.WriteLine("valide bien");
-
+        else if ((num3 > num2) && (num3 > num1))
+        {
+            Console.WriteLine("\n El numero mayor es " + num3.ToString("#,##0"));
+            Console.WriteLine("\n El numero del medio es " + num2.ToString("#,##0"));
+            Console.WriteLine("\n El numero menor es " + num1.ToString("#,##0"));
+        }
+        
     }
 }
