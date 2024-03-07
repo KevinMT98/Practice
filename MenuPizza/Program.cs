@@ -27,7 +27,7 @@
         Console.WriteLine();
         string? ingrediente = Console.ReadLine();
 
-        if (ingrediente == "\n 1")
+        if (ingrediente == "1")
         {
             Console.WriteLine("\n Su pizza es vegetariana y Sus ingredintes son: Mozzarella - Tomate - Tofu");
         }
@@ -46,7 +46,7 @@
         string? ingrediente = Console.ReadLine();
         Console.WriteLine();
 
-        if (ingrediente == "\n 1")
+        if (ingrediente == "1")
         {
             Console.WriteLine("\n Su pizza no es vegetariana y Sus ingredintes son: Mozzarella - Tomate - Peperoni");
         }
